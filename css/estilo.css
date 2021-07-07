@@ -1,0 +1,32 @@
+#container{
+  display: flex
+}
+#menu-lateral {
+  display: flex;
+  justify-content: center;
+  width: 22rem;
+  /* height: 250.8rem; */
+  background: red;
+}
+#menu-lateral header{
+  background: linear-gradient();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.8rem;
+  width: 100%;
+}
+#menu-lateral header h2{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+
+  color: var(--white);
+  
+}
+
+
+#conteudo-principal{
+  
+  background: blue;
+}
