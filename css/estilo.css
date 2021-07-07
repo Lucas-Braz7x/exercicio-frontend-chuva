@@ -1,11 +1,108 @@
 #container{
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+  grid-template-areas: 
+   "menu-lateral header header"
+   "menu-lateral main main"
+   "menu-lateral footer footer";
+  overflow-x: none;
+  
+  width: 100vw;
+  height: 100vh;
+
+  background: #E5E5E5;
+}
+
+header{
+  grid-area: header;
+  height: 6.8rem;
+  width: 100%;
+
+  background: #FDF1EB;
+  position: relative;
+
+  margin-bottom: 0;
+  
+}
+#menu-lateral {
+  grid-area: menu-lateral;
+  
+  width: 22rem;
+  height: 100vh;
+
+  
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  background: var(--white);
+}
+
+#menu-lateral > #retangulo-laranja{
+  display: flex;
+  
+  align-items: center;
+  height: 6.8rem;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  background:  linear-gradient(180deg, var(--light-orange),var(--orange));;
+}
+
+#menu-lateral > #retangulo-laranja > p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.8rem;
+
+  margin: 0 2rem 0 2.2rem;
+  color: var(--white);
+}
+
+#menu-lateral > #logo > img{
+  height: 25.8rem;
+  width: 22rem;
+}
+
+#menu-lateral > nav ul li{
+  height: 3.3rem;
+  padding: .7rem 0 .7rem 2.4rem;
+  border-bottom: 1px solid #ECECEC;
+
+  
+}
+
+#menu-lateral > nav ul li a{
+  font-family: 'Quicksand';
+  color: #725C5C;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+
+#conteudo-principal{
+  grid-area: main;
+  background: blue;
+  margin-top: 2rem;
+  margin-left: 4.3rem;
+
+  height: 138.2rem;
+}
+
+footer{
+  grid-area: footer;
+  height: 18.1rem;
+  margin-left: 1.4rem;
+  margin-right: 4.6rem;
+}
+
+
+/* #container{
   display: flex
 }
 #menu-lateral {
   display: flex;
   justify-content: center;
   width: 22rem;
-  /* height: 250.8rem; */
+   height: 250.8rem; 
   background: red;
 }
 #menu-lateral header{
@@ -16,17 +113,19 @@
   height: 6.8rem;
   width: 100%;
 }
-#menu-lateral header h2{
+#menu-lateral header p{
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 3rem;
 
   color: var(--white);
   
+  margin-left: 2rem;
+  margin-right: 2.2rem;
 }
 
 
 #conteudo-principal{
   
   background: blue;
-}
+} */
