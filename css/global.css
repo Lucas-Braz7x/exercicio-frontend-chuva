@@ -55,7 +55,7 @@ h2{
 }
 
 /* Input and buttons */
-button, .button{
+.button > button{
   width: 9.7rem;
   height: 3.4rem;
 
