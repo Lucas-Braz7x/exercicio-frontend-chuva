@@ -302,6 +302,7 @@ header #perfil-usuario > div > img{
   line-height: 2.5rem;
   font-weight: 500;
 
+  color: #4E4E4E;
   background: #FDF1EB;
 }
 
@@ -362,10 +363,49 @@ header #perfil-usuario > div > img{
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
-  line-height: 1.68rem;
-
-  
+  line-height: 1.68rem;  
 }
+
+#resumo{
+  margin-right: 4.5rem;
+}
+
+#resumo > div > div:nth-child(1){
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+
+  color: #4E4E4E;
+  background: #FDF1EB;
+}
+
+#resumo > div > div:nth-child(2){
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.275rem;
+  font-weight: 400;
+
+  color: #4E4E4E;
+  text-align: justify;
+}
+
+#resumo #ver-mais > span{
+  color: #ED7839;
+}
+
+
+#leia-mais{
+  opacity: 0;
+  display: none;
+
+ 
+}
+
+#leia-mais p{
+  margin-top: 2.5rem;
+}
+
 
 
 footer{
