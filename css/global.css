@@ -10,9 +10,11 @@ html{/*Variaveis*/
   --white: #FFFFFF;
   --light-orange: #FFB354 0%;
   --orange: #EE7A3A 100%;
+  --orange-text: #ED7839;
+
   --light: #FDF1EB;
   
-  --grey-dark: #333333;
+  --grey-dark: #4E4E4E;
   --grey-light: #725C5C;
   --grey-medium: #725C5C;
   /* 1rem = 16px = 100% */
@@ -50,10 +52,11 @@ body, button, input, textarea{
   border-width: 0;
 }
 
-h2{
-  font-size: 2.8rem;
-}
 
+/* .gradiente{
+  background:  linear-gradient(180deg, var(--light-orange),var(--orange));;
+}
+ */
 /* Input and buttons */
 .button > button{
   width: 9.7rem;
