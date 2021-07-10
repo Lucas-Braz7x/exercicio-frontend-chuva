@@ -85,5 +85,7 @@ body, button, input, textarea{
 button:hover, .button:hover{
   filter: brightness(1.2);
   transition: filter 1s;
+
+  cursor: pointer;
 }
 

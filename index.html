@@ -90,11 +90,10 @@
           <span>
             <p>Como citar esse trabalho?</p>
           </span>
-        </div>
-        
-        
+        </div>  
       </div>
-      
+
+      <!-- Conteudo principal  -->
       <section>
         <main>
           <img src="images/vídeo-apresentação.svg" alt="Video de Apresentação">
@@ -125,7 +124,7 @@
           </div>
         </aside>
       </section>
-
+      <!-- Resumo-->
       <section id="resumo">
         <div class="card">
           <div class="card-header">
@@ -176,6 +175,7 @@
         </div>
       </section>
 
+      <!-- discussões -->
       <section id="discussoes">
         <div class="card">
           <div class="card-header">
@@ -183,7 +183,9 @@
           </div> 
           <div class="card-body">
             <div id="discussoes-cabecalho">
-              <div id="discussoes-titulo"><h3>Compartilhe suas ideias ou dúvidas com os autores!</h3></div>
+              <div id="discussoes-titulo">
+                <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
+              </div>
               <div>
                 <img src="images/icone1.svg" alt="">
                 <img src="images/icone2.svg" alt="">
@@ -194,12 +196,16 @@
               </h6>
             </div>
             
+            <!-- Botao de criar discussões -->
             <div id="criar-discussao" >
               <div></div>
-              <div class="gradiente" onclick="criarTopico()"> <img src="images/icon-criar.svg" alt="Criar Tópicos"> criar tópico</div>
+              <div class="gradiente" onclick="criarTopico()"> 
+                <img src="images/icon-criar.svg" alt="Criar Tópicos"> criar tópico
+              </div>
               <div></div>
             </div>
 
+            <!-- Criando/editando discussões -->
             <div id="nova-discussao">
               <h3>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h3>
         
@@ -220,40 +226,54 @@
               
             </div>
 
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Assunto da pergunta aparece aqui</h5>
+            <!-- Discussões -->
+            <div id="lista-discussoes">
+              <div  class="card discussoes-topicos">
+                <div class="card-body">
+                  <div>
+                    <h5 class="card-title">Assunto da pergunta aparece aqui</h5>
+                    <h6 class="card-subtitle">Carlos Henrique Santos</h6>
+                    <p class="card-text"> Comecinho da pergunta aparece aqui resente relato inscreve-se 
+                      no campo da análise da dimensão e impacto de processo formativo situado impacto de 
+                      processo formativo processo...
+                    </p>
+                  </div>
+                  <div class='discussoes-rodape'>
+                    <div class="informacao">
+                      <img  src="images/mais-info.svg" alt="Mais informação">
+                      <img  src="images/mais-info.svg" alt="Mais informação">
+                      <img src="images/mais-info.svg" alt="Mais informação">
+                    </div>
+                    <button class="gradiente"><img id="curtir"src="images/curtir.svg" alt="Curti"></button>
+                    <p id="contador-curtida">###</p>
+                    <p> 1 resposta</p>
+                  </div>
+                </div>
+              </div>
+              <div  class="card discussoes-topicos">
+                <div class="card-body">
+                  <div>
+                    <h5 class="card-title">Assunto da pergunta aparece aqui</h5>
+                    <h6 class="card-subtitle">Carlos Henrique Santos</h6>
+                    <p class="card-text"> Comecinho da pergunta aparece aqui resente relato inscreve-se 
+                      no campo da análise da dimensão e impacto de processo formativo situado impacto de 
+                      processo formativo processo...
+                    </p>
+                  </div>
+                  <div class='discussoes-rodape'>
+                    <div class="informacao">
+                      <img  src="images/mais-info.svg" alt="Mais informação">
+                      <img  src="images/mais-info.svg" alt="Mais informação">
+                      <img src="images/mais-info.svg" alt="Mais informação">
+                    </div>
+                    <button class="gradiente"><img id="curtir"src="images/curtir.svg" alt="Curti"></button>
+                    <p id="contador-curtida">###</p>
+                    <p> 1 resposta</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <span id="leia-mais"> 
-              <p>
-                Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna.
-                Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia
-                quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat.
-                Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis.
-                Etiam finibus urna libero, eget interdum eros volutpat ullamcorper.
-                Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor.
-                Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
-              </p>
-              <p>
-                Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna.
-                Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia
-                quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat.
-                Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis.
-                Etiam finibus urna libero, eget interdum eros volutpat ullamcorper.
-                Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor.
-                Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
-              </p>
-              <p>
-                Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna.
-                Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia
-                quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat.
-                Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis.
-                Etiam finibus urna libero, eget interdum eros volutpat ullamcorper.
-                Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor.
-                Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
-              </p>
-            </span>
+            
           </div>
         </div>
       </section>
