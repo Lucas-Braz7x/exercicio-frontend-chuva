@@ -196,8 +196,28 @@
             
             <div id="criar-discussao" >
               <div></div>
-              <div class="gradiente"> <img src="images/icon-criar.svg" alt="Criar Tópicos"> criar tópico</div>
+              <div class="gradiente" onclick="criarTopico()"> <img src="images/icon-criar.svg" alt="Criar Tópicos"> criar tópico</div>
               <div></div>
+            </div>
+
+            <div id="nova-discussao">
+              <h3>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h3>
+        
+              <form action="">
+                <label for="assunto">Assunto:</label>
+                <input name="assunto" id="assunto" placeholder="Defina um tópico sucinto para notificar os autores..."/>
+                <label for="conteudo">Conteúdo:</label>
+                <textarea name="conteudo" id="conteudo"></textarea>
+                <div>
+                  <div id="editar-texto">
+                    <img src="images/negrito.svg" alt="negrito">
+                    <img src="images/italico.svg" alt="italico">
+                  </div>  
+                  <button id="botao-enviar" class="gradiente" type="submit">Enviar</button>
+                </div>
+              </form>
+
+              
             </div>
 
             <div class="card">
@@ -237,16 +257,6 @@
           </div>
         </div>
       </section>
-
-  <!--     <section id="discussoes">
-        <div class="card">
-          <div class="card-header">Discussões</div>
-          <div class="card-body container">
-            <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
-          </div>
-        </div>
-      </section> -->
-      
     </div>
     <footer>
       <img src="images/footer.svg" alt="Rodapé">

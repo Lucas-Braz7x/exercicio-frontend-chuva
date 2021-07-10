@@ -11,3 +11,14 @@ function leiaMais() {
     lerMais.style.opacity = 1;
   }
 }
+
+function criarTopico(){
+  var discussoesCabecalho = document.getElementById('discussoes-cabecalho');
+  var criarDiscussao = document.getElementById('criar-discussao');
+  var novaDiscussao = document.getElementById('nova-discussao');
+
+  discussoesCabecalho.style.display = 'none';
+  criarDiscussao.style.display = 'none';
+  novaDiscussao.style.display = 'block'
+
+}

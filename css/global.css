@@ -8,9 +8,10 @@
 
 html{/*Variaveis*/
   --white: #FFFFFF;
-  --light-orange: #FFB354 0%;
-  --orange: #EE7A3A 100%;
+  --light-orange: #FFB354 ;
+  --orange: #EE7A3A;
   --orange-text: #ED7839;
+  
 
   --light: #FDF1EB;
   
@@ -53,10 +54,10 @@ body, button, input, textarea{
 }
 
 
-/* .gradiente{
-  background:  linear-gradient(180deg, var(--light-orange),var(--orange));;
+.gradiente{
+  background:  linear-gradient(180deg, var(--light-orange) 0%,var(--orange) 100%);
 }
- */
+
 /* Input and buttons */
 .button > button{
   width: 9.7rem;
@@ -83,6 +84,6 @@ body, button, input, textarea{
 
 button:hover, .button:hover{
   filter: brightness(1.2);
-  transition: filter 2s;
+  transition: filter 1s;
 }
 
