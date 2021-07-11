@@ -89,3 +89,15 @@ button:hover, .button:hover{
   cursor: pointer;
 }
 
+/* Formatações de texto */
+
+.topicos-textos{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+
+  color: var(--orange-text);
+}
+
+

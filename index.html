@@ -219,7 +219,7 @@
                     <img src="images/negrito.svg" alt="negrito">
                     <img src="images/italico.svg" alt="italico">
                   </div>  
-                  <button id="botao-enviar" class="gradiente" type="submit">Enviar</button>
+                  <button onclick="criarDiscussao()" id="botao-enviar" class="gradiente" type="text" getData>Enviar</button>
                 </div>
               </form>
 
@@ -228,6 +228,10 @@
 
             <!-- Discussões -->
             <div id="lista-discussoes">
+
+              
+    
+
               <div  class="card discussoes-topicos">
                 <div class="card-body">
                   <div>
@@ -239,17 +243,91 @@
                     </p>
                   </div>
                   <div class='discussoes-rodape'>
-                    <div class="informacao">
+                    <div onclick="expandirInformacao('discussao-mais-informacao-1')" class="informacao">
                       <img  src="images/mais-info.svg" alt="Mais informação">
                       <img  src="images/mais-info.svg" alt="Mais informação">
                       <img src="images/mais-info.svg" alt="Mais informação">
                     </div>
-                    <button class="gradiente"><img id="curtir"src="images/curtir.svg" alt="Curti"></button>
+                    <button class="gradiente"><img class="curtir"src="images/curtir.svg" alt="Curti"></button>
                     <p id="contador-curtida">###</p>
                     <p> 1 resposta</p>
                   </div>
                 </div>
               </div>
+
+              <div id="discussao-mais-informacao-1">
+                <div class="card discussoes-topicos discussao-mais-informacao">
+                  <div class="card-body">
+                    <div>
+                      <div class="card-subtitle discussao-autores">
+                        <h6>Carlos Henrique Santos</h6>
+                        <div class="autores">
+                          <h6 class="topicos-textos">Autor</h6>
+                          <img src="images/autor-coautor.svg" alt="Check">
+                        </div>
+                      </div>
+                      <p class="card-text"> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão 
+                        e impacto de processo formativo situado impacto de processo formativo processo resente relato 
+                        inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto 
+                        de processo formativo processo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div  class="card discussoes-topicos discussao-mais-informacao">
+                  <div class="card-body">
+                    <div>
+                      <div class="card-subtitle discussao-autores">
+                        <h6>Carlos Henrique Santos</h6>
+                        
+                      </div>
+                      <p class="card-text"> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão 
+                        e impacto de processo formativo situado impacto de processo formativo processo resente relato 
+                        inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto 
+                        de processo formativo processo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div   class="card discussoes-topicos discussao-mais-informacao">
+                  <div class="card-body">
+                    <div>
+                      <div class="card-subtitle discussao-autores">
+                        <h6>Carlos Henrique Santos</h6>
+                        <div class="autores">
+                          <h6 class="topicos-textos">Coautor</h6>
+                          <img src="images/autor-coautor.svg" alt="Check">
+                        </div>
+                      </div>
+                      <p class="card-text"> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão 
+                        e impacto de processo formativo situado impacto de processo formativo processo resente relato 
+                        inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto 
+                        de processo formativo processo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                             
+              <div  class="card discussoes-topicos discussao-mais-informacao">
+                <div class="card-body">
+                  <div>
+                    <div class="card-subtitle discussao-autores">
+                      <h6>Carlos Henrique Santos</h6>
+                      <div class="autores">
+                        <h6 class="topicos-textos">Coautor</h6>
+                        <img src="images/autor-coautor.svg" alt="Check">
+                      </div>
+                    </div>
+                    <p class="card-text"> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão 
+                      e impacto de processo formativo situado impacto de processo formativo processo resente relato 
+                      inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto 
+                      de processo formativo processo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              </div>
+
               <div  class="card discussoes-topicos">
                 <div class="card-body">
                   <div>
@@ -261,17 +339,93 @@
                     </p>
                   </div>
                   <div class='discussoes-rodape'>
-                    <div class="informacao">
+                    <div onclick="expandirInformacao('discussao-mais-informacao-2')" class="informacao">
                       <img  src="images/mais-info.svg" alt="Mais informação">
                       <img  src="images/mais-info.svg" alt="Mais informação">
                       <img src="images/mais-info.svg" alt="Mais informação">
                     </div>
-                    <button class="gradiente"><img id="curtir"src="images/curtir.svg" alt="Curti"></button>
+                    <button class="gradiente"><img class="curtir"src="images/curtir.svg" alt="Curti"></button>
                     <p id="contador-curtida">###</p>
                     <p> 1 resposta</p>
                   </div>
                 </div>
               </div>
+
+              <div id="discussao-mais-informacao-2">
+                <div class="card discussoes-topicos discussao-mais-informacao">
+                  <div class="card-body">
+                    <div>
+                      <div class="card-subtitle discussao-autores">
+                        <h6>Carlos Henrique Santos</h6>
+                        <div class="autores">
+                          <h6 class="topicos-textos">Autor</h6>
+                          <img src="images/autor-coautor.svg" alt="Check">
+                        </div>
+                      </div>
+                      <p class="card-text"> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão 
+                        e impacto de processo formativo situado impacto de processo formativo processo resente relato 
+                        inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto 
+                        de processo formativo processo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div  class="card discussoes-topicos discussao-mais-informacao">
+                  <div class="card-body">
+                    <div>
+                      <div class="card-subtitle discussao-autores">
+                        <h6>Carlos Henrique Santos</h6>
+                        
+                      </div>
+                      <p class="card-text"> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão 
+                        e impacto de processo formativo situado impacto de processo formativo processo resente relato 
+                        inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto 
+                        de processo formativo processo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div   class="card discussoes-topicos discussao-mais-informacao">
+                  <div class="card-body">
+                    <div>
+                      <div class="card-subtitle discussao-autores">
+                        <h6>Carlos Henrique Santos</h6>
+                        <div class="autores">
+                          <h6 class="topicos-textos">Coautor</h6>
+                          <img src="images/autor-coautor.svg" alt="Check">
+                        </div>
+                      </div>
+                      <p class="card-text"> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão 
+                        e impacto de processo formativo situado impacto de processo formativo processo resente relato 
+                        inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto 
+                        de processo formativo processo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                             
+              <div  class="card discussoes-topicos discussao-mais-informacao">
+                <div class="card-body">
+                  <div>
+                    <div class="card-subtitle discussao-autores">
+                      <h6>Carlos Henrique Santos</h6>
+                      <div class="autores">
+                        <h6 class="topicos-textos">Coautor</h6>
+                        <img src="images/autor-coautor.svg" alt="Check">
+                      </div>
+                    </div>
+                    <p class="card-text"> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão 
+                      e impacto de processo formativo situado impacto de processo formativo processo resente relato 
+                      inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto 
+                      de processo formativo processo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+            
+
             </div>
             
           </div>

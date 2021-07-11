@@ -196,7 +196,7 @@ header #perfil-usuario > div > img{
   margin-top: 2rem;
   margin-left: 4.3rem;
 
-  height: 138.2rem;
+  height: auto;
 }
 
 #conteudo-principal-topo{
@@ -406,6 +406,11 @@ header #perfil-usuario > div > img{
   margin-top: 2.5rem;
 }
 /* Fim do resumo */
+
+/*Parte de discussões */
+#discussoes{
+  margin-bottom: 5rem;
+}
 
 div.card-header{
   font-family: 'Roboto', sans-serif;
@@ -655,6 +660,45 @@ form > div > #botao-enviar{
 
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
   border-radius: 2px;
+}
+
+.discussao-mais-informacao{
+  margin-top: -1.7rem;
+  /* background: #E7E7E7; */
+
+}
+
+#discussao-mais-informacao-1{
+  display: none;
+  opacity: 0;
+}
+#discussao-mais-informacao-2{
+  display: none;
+  opacity: 0;
+}
+
+.ativo{
+  background: #E7E7E7;
+}
+
+.discussao-autores{
+  /* background: #F8F8F8; */
+  margin-top: .9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discussao-autores .autores{
+  display: flex;
+  align-items:center;
+  gap: 1.331rem;
+}
+
+.autores > img{
+  width: 3.1rem;
+  height: 2.32rem;
+
 }
 
 footer{
