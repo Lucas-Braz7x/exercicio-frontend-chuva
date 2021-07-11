@@ -147,18 +147,20 @@ header #perfil-usuario > div > img{
   top: 0;
 
   background: var(--white);
+
+  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
-#menu-lateral > #retangulo-laranja{
+#menu-lateral > div.gradiente{
   display: flex;
   
   align-items: center;
   height: 6.8rem;
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-  background:  linear-gradient(180deg, var(--light-orange),var(--orange));;
+  
 }
 
-#menu-lateral > #retangulo-laranja > p{
+#menu-lateral > div.gradiente > p{
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 3rem;
@@ -168,20 +170,41 @@ header #perfil-usuario > div > img{
   color: var(--white);
 }
 
-#menu-lateral > #logo > img{
+#logo > img{
   height: 25.8rem;
-  width: 22rem;
+  width: 21rem;
 }
 
 #menu-lateral > nav ul li{
   height: 3.3rem;
-  padding: .7rem 0 .7rem 2.4rem;
-  border-bottom: 1px solid #ECECEC;
+  display: flex;
+  border-bottom:.2rem solid #ECECEC;
 
   
 }
 
+nav ul li > div{
+  width: .5rem;
+  height: 100%;
+}
+
+nav ul li > div.gradiente{
+  display: none;
+}
+
+#trabalhos{
+  background: #FDF1EB;
+}
+#trabalhos > div.gradiente{
+  display: block;
+}
+
+
+
+
+
 #menu-lateral > nav ul li a{
+  padding: .7rem 0 .7rem 2.4rem;
   font-family: 'Quicksand';
   color: var(--grey-medium);
   font-weight: 500;
@@ -628,6 +651,8 @@ section#discussoes > div{
 .discussoes-topicos{
   height: 14.8rem;
   padding-left: 2.41rem;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+
 }
 
 .discussoes-topicos h5{

@@ -1,3 +1,11 @@
+function destacarTema(){
+  const tema = getElementById('trabalhos');
+  const gradiente = getElementById('gradiente');
+  tema.style.backgroundColor = '#FDF1EB'; 
+  gradiente.style.display = 'block';
+}
+
+
 /* Funcão leia mais (resumo) */
 function leiaMais() {
   var verMais = document.getElementById("ver-mais");
@@ -90,4 +98,11 @@ function expandirInformacao(id){
   
 }
 
+
+function curtidas(){
+  const curtir = document.getElementsByClassName('curtir');
+  curtir.forEach(
+    curtir.add  
+  )
+}
 var cont =1;
