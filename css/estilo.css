@@ -429,7 +429,7 @@ section#discussoes > div{
   width: 100%;
 }
 
-#discussoes-cabecalho{
+.discussoes-cabecalho{
 
   display: none;
 
@@ -442,7 +442,7 @@ section#discussoes > div{
   text-align: center;
 }
 
-#discussoes-cabecalho h3{
+.discussoes-cabecalho h3{
   color: var(--orange-text);
   font-size: 1.8rem;
   font-weight: 700;
@@ -451,14 +451,14 @@ section#discussoes > div{
   clear: both;
 }
 
-#discussoes-cabecalho div:nth-child(2){
+.discussoes-cabecalho div:nth-child(2){
   margin: 2.7rem 0 3.5rem 0;
   display: flex;
   justify-content: center;
   gap: 5.374rem;
 }
 
-#discussoes-cabecalho h6{
+.discussoes-cabecalho h6{
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -468,7 +468,17 @@ section#discussoes > div{
   color: #595959;
 
 }
+.discussoes-cabecalho a{
+  color: var(--orange-text);
+  text-decoration: underline;
+  margin-bottom: 4.7rem;
+}
 
+#elemento-enviado{
+  display: none;
+}
+
+#criar-discussao2,
 #criar-discussao{
   display: flex;
   justify-content: center;
@@ -478,9 +488,12 @@ section#discussoes > div{
   z-index: 1;
 }
 
+
+#criar-discussao2> div:nth-child(1),
+#criar-discussao2 > div:nth-child(3),
 #criar-discussao > div:nth-child(1),
 #criar-discussao > div:nth-child(3){
-  border: 1px solid red;
+  border: .05rem solid red;
   
   height: .1rem;
   width: 45rem;
@@ -488,6 +501,7 @@ section#discussoes > div{
   z-index: 2;
 } 
 
+#criar-discussao2 > div:nth-child(2),
 #criar-discussao > div:nth-child(2){
   display: flex;
   
@@ -510,9 +524,14 @@ section#discussoes > div{
   font-weight: 700;
 }
 
+#criar-discussao2 > div:nth-child(2):hover,
 #criar-discussao > div:nth-child(2):hover{
   cursor: pointer;
   filter: brightness(1.2);
+}
+
+#criar-discussao2 .gradiente {
+  width: 23.5rem;
 }
 
 #nova-discussao{
@@ -543,32 +562,39 @@ section#discussoes > div{
   margin-bottom:1rem ;
 }
 
-form #assunto{
-  width: 100%;
+
+/* Area do formulario */
+#nova-discussao #input-assunto{  
   height: 3.9rem;
+
+  overflow-y: hidden;
+
+  box-sizing: border-box;
+}
+
+#nova-discussao .textarea{
+  height: 8.2rem;    
+}
+
+#nova-discussao #input-assunto,
+#nova-discussao .textarea{
+  width: 100%;
+
   border: .1rem solid #cccccc;
   border-radius: .3rem;
 
   padding: 1rem 0 1.1rem 2.3rem;
-  
+
   font-family: 'Quicksand';
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.7rem;
 
   color: #4D4D4D;
-  overflow-y: hidden;
-
   box-sizing: border-box;
 }
 
-form #conteudo{
-  height: 8.2rem;
-  border: .1rem solid #cccccc;
-  border-radius: .3rem;
-}
-
-form > div{
+#nova-discussao > div{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -576,17 +602,20 @@ form > div{
   height: 3.1rem;
 }
 
-form > div > #editar-texto{
+#nova-discussao > div > #editar-texto{
   display: flex;
   gap: 3.08rem;
   margin-left: 2.93rem;
 }
-form > div > #botao-enviar{
+#nova-discussao > div > #botao-enviar{
   width: 20.51rem;
   height: 3.1rem;
 
   color: var(--white);
 }
+/* Fim da área do formilário */
+
+/* Elemento criado */
 
 #lista-discussoes{
   margin-top: 1.5rem;
@@ -706,4 +735,38 @@ footer{
   height: 18.1rem;
   margin-left: 1.4rem;
   margin-right: 4.6rem;
+}
+
+
+#elemento-novo{
+  border-radius: .4rem;
+  background:rgba(221, 221, 221, .8);
+  position: absolute;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .8rem;
+
+  margin-left: -2.4rem;
+  
+  height: 100%;
+  width: 100%;
+}
+
+#elemento-novo h6{
+  color: #707070;
+  line-height: 2rem;
+}
+
+#elemento-novo a{
+  color: var(--orange-text);
+  font-family: 'Segoe UI';
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86rem;
+
+  text-decoration: underline;
 }

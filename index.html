@@ -182,8 +182,8 @@
             Discussões
           </div> 
           <div class="card-body">
-            <div id="discussoes-cabecalho">
-              <div id="discussoes-titulo">
+            <div class="discussoes-cabecalho" id="discussoes-cabecalho">
+              <div class="discussoes-titulo">
                 <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
               </div>
               <div>
@@ -195,7 +195,26 @@
                  e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
               </h6>
             </div>
-            
+
+            <div class="card-body " id="elemento-enviado">
+              <div class="discussoes-cabecalho">
+                <div class="discussoes-titulo">
+                  <h3>Seu tópico foi enviado com sucesso! :D</h3>
+                </div>
+                <h6>
+                  Agradecemos por sua contribuição, 
+                  uma notificação será enviada ao seu email assim que seu tópico for respondido!
+                </h6>
+                <a href="#">Descubra outros trabalhos</a>
+              </div>
+              <div id="criar-discussao2" >
+                <div></div>
+                <div class="gradiente" onclick="criarTopico()"> 
+                  <img src="images/icon-criar.svg" alt="Criar Tópicos"> criar tópico
+                </div>
+                <div></div>
+              </div>
+            </div>            
             <!-- Botao de criar discussões -->
             <div id="criar-discussao" >
               <div></div>
@@ -204,12 +223,12 @@
               </div>
               <div></div>
             </div>
-
+  
             <!-- Criando/editando discussões -->
             <div id="nova-discussao">
               <h3>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h3>
         
-              <form action="">
+              <!-- <form action="">
                 <label for="assunto">Assunto:</label>
                 <input name="assunto" id="assunto" placeholder="Defina um tópico sucinto para notificar os autores..."/>
                 <label for="conteudo">Conteúdo:</label>
@@ -219,18 +238,29 @@
                     <img src="images/negrito.svg" alt="negrito">
                     <img src="images/italico.svg" alt="italico">
                   </div>  
-                  <button onclick="criarDiscussao()" id="botao-enviar" class="gradiente" type="text" getData>Enviar</button>
+                  <button onclick="criarDiscussao()" id="botao-enviar" class="gradiente" type="text" >Enviar</button>
                 </div>
-              </form>
-
+              </form>-->
               
+              <label for="input-assunto">Assunto:</label>
+              <input name="input-assunto" id="input-assunto" placeholder="Defina um tópico sucinto para notificar os autores..."/>
+              <label for="conteudo-textarea">Conteúdo:</label>
+              <!-- <textarea name="conteudo-textarea" type="text" id=""></textarea>
+              <textarea type="text" class="textarea" id="conteudo-textarea"></textarea>  -->
+              <textarea type="text" class="textarea" id="textarea-conteudo"></textarea>
+              <div>
+                <div id="editar-texto">
+                  <img src="images/negrito.svg" alt="negrito">
+                  <img src="images/italico.svg" alt="italico">
+                </div>  
+                  
+                <button onclick="criarDiscussao ()" id="botao-enviar" class="gradiente" type="text" >Enviar</button>
+              </div>
+
             </div>
 
             <!-- Discussões -->
             <div id="lista-discussoes">
-
-              
-    
 
               <div  class="card discussoes-topicos">
                 <div class="card-body">
@@ -423,8 +453,6 @@
                 </div>
               </div>
               </div>
-
-            
 
             </div>
             

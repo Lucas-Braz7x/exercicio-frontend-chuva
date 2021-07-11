@@ -27,41 +27,52 @@ function criarTopico(){
 
 /* Criando nova discussão */
 
-var selectedLevel = window.location.search;
-selectedLevel = selectedLevel.replace('?', '');
-
-console.log(selectedLevel)
 function criarDiscussao (){
-
+  const elementoEnviado = document.getElementById('elemento-enviado');
   const listaDiscussoes = document.getElementById('lista-discussoes');
+  const novaDiscussao = document.getElementById('nova-discussao');
 
-  const input = document.getElementById('assunto');
-  const textarea = document.getElementById('conteudo');
-  
-  const conteudo = document.createElement('div')
+  const input = document.getElementById('input-assunto').value;
+  const textarea = document.getElementById('textarea-conteudo').value;
+
+  console.log(input);
+  console.log(textarea);
+
+  const conteudo = document.createElement('div');
   conteudo.innerHTML =`
-  <div id="elemento-criado"  class="card discussoes-topicos">
-    <div class="card-body">
-      <div>
-        <h5 class="card-title assunto">${input.value}</h5>
-        <h6 class="card-subtitle">Anônimo</h6>
-        <p class="card-text">${textarea.value} 
-        </p>
-      </div>
-      <div class='discussoes-rodape'>
-        <div onclick="expandirInformacao('discussao-mais-informacao-1')" class="informacao">
-          <img  src="images/mais-info.svg" alt="Mais informação">
-          <img  src="images/mais-info.svg" alt="Mais informação">
-          <img src="images/mais-info.svg" alt="Mais informação">
-        </div>
-        <button class="gradiente"><img class="curtir"src="images/curtir.svg" alt="Curti"></button>
-        <p id="contador-curtida">###</p>
-        <p> 1 resposta</p>
-      </div>
-    </div>
-  </div>`
+      <div  class="card discussoes-topicos">
 
-listaDiscussoes.insertBefore(conteudo, listaDiscussoes.children[0]) /* appendChild(conteudo, firt) */  
+        <div  id="elemento-novo">
+          <img src="images/autor-coautor-cinza.svg" alt="">
+          <h6 class="topicos-textos">Aguardando feedback dos autores</h6>
+          <a href="#">Editar tópico</a>
+        </div>
+
+        <div class="card-body">
+            <div>
+              <h5 class="card-title">${input}</h5>
+              <h6 class="card-subtitle">Anônimo</h6>
+              <p class="card-text"> 
+                ${textarea}
+              </p>
+            </div>
+            <div class='discussoes-rodape'>
+              <div onclick="expandirInformacao('discussao-mais-informacao-1')" class="informacao">
+                <img  src="images/mais-info.svg" alt="Mais informação">
+                <img  src="images/mais-info.svg" alt="Mais informação">
+                <img src="images/mais-info.svg" alt="Mais informação">
+              </div>
+              <button class="gradiente"><img class="curtir"src="images/curtir.svg" alt="Curti"></button>
+              <p id="contador-curtida">###</p>
+              <p> 1 resposta</p>
+            </div>
+          </div>
+      </div>
+`
+listaDiscussoes.insertBefore(conteudo, listaDiscussoes.children[0])
+
+novaDiscussao.style.display = 'none'
+elementoEnviado.style.display = 'block'
 }
 
 
