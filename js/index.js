@@ -71,8 +71,8 @@ function criarDiscussao (){
                 <img src="images/mais-info.svg" alt="Mais informação">
               </div>
               <button class="gradiente"><img class="curtir"src="images/curtir.svg" alt="Curti"></button>
-              <p id="contador-curtida">###</p>
-              <p> 1 resposta</p>
+              <p id="contador-curtida">0 Like</p>
+              <p> 0 resposta</p>
             </div>
           </div>
       </div>

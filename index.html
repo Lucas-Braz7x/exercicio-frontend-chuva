@@ -23,9 +23,10 @@
 </head>
 <body>
  
-  <div id="conteudo">
+  <div id="conteudo" class="container-fluid">
+    <!-- Cabeçalho -->
     <header>
-      <div id="titulo">
+      <div class="texto-roboto-normal" id="titulo">
         <p>Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
         <p>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </p>
         <p>ISSN: 1234-5678</p>
@@ -45,7 +46,7 @@
         </div>
       </div>
       
-      <div id="perfil-usuario">
+      <div id="perfil-usuario" class="text-quicksand-normal">
         <div>
           <p>Bem vindo!</p>
           <p>alguem12@galoascience.com</p>
@@ -56,6 +57,9 @@
         </div>
       </div>
     </header>
+  <!--****************************  -->
+
+  <!-- Menu lateral -->
     <div id="menu-lateral" class="card">
       <div class="gradiente" >
         <p> SLACA 2019</p>
@@ -64,7 +68,7 @@
         <img src="images/logo.svg" alt="Logo do evento">
       </div>
       <nav>
-        <ul>
+        <ul class="text-quicksand-normal">
           <li id="apresentacao">
             <div class="gradiente"></div>
             <a href="#">Apresentação</a>
@@ -92,6 +96,9 @@
         </ul>
       </nav>
     </div>
+  <!--****************************  -->
+
+  <!-- Titulo do conteudo principal e botões -->
     <div id="conteudo-principal">
       <div id="conteudo-principal-topo">
         <div id="conteudo-titulo">
@@ -110,10 +117,11 @@
           </span>
         </div>  
       </div>
+  <!--****************************  -->
 
       <!-- Conteudo principal  -->
       <section>
-        <main>
+        <main class="card">
           <img src="images/vídeo-apresentação.svg" alt="Video de Apresentação">
         </main>
         <aside class="card">
@@ -142,6 +150,8 @@
           </div>
         </aside>
       </section>
+  <!--****************************  -->
+
       <!-- Resumo-->
       <section id="resumo">
         <div class="card">
@@ -192,6 +202,7 @@
           </div>
         </div>
       </section>
+  <!--****************************  -->
 
       <!-- discussões -->
       <section id="discussoes">
@@ -297,14 +308,14 @@
                       <img src="images/mais-info.svg" alt="Mais informação">
                     </div>
                     <button class="gradiente"><img class="curtir"src="images/curtir.svg" alt="Curti"></button>
-                    <p id="contador-curtida">###</p>
+                    <p id="contador-curtida">1 Like</p>
                     <p> 1 resposta</p>
                   </div>
                 </div>
               </div>
 
               <div id="discussao-mais-informacao-1">
-                <div class="card discussoes-topicos discussao-mais-informacao">
+                <div class="card discussoes-topicos discussao-mais-informacao autor-ativo">
                   <div class="card-body">
                     <div>
                       <div class="card-subtitle discussao-autores">
@@ -337,7 +348,7 @@
                     </div>
                   </div>
                 </div>
-                <div   class="card discussoes-topicos discussao-mais-informacao">
+                <div   class="card discussoes-topicos discussao-mais-informacao autor-ativo">
                   <div class="card-body">
                     <div>
                       <div class="card-subtitle discussao-autores">
@@ -356,7 +367,7 @@
                   </div>
                 </div>
                              
-              <div  class="card discussoes-topicos discussao-mais-informacao">
+              <div  class="card discussoes-topicos discussao-mais-informacao autor-ativo">
                 <div class="card-body">
                   <div>
                     <div class="card-subtitle discussao-autores">
@@ -393,14 +404,14 @@
                       <img src="images/mais-info.svg" alt="Mais informação">
                     </div>
                     <button class="gradiente"><img class="curtir"src="images/curtir.svg" alt="Curti"></button>
-                    <p id="contador-curtida">###</p>
+                    <p id="contador-curtida">1 Like</p>
                     <p> 1 resposta</p>
                   </div>
                 </div>
               </div>
 
               <div id="discussao-mais-informacao-2">
-                <div class="card discussoes-topicos discussao-mais-informacao">
+                <div class="card discussoes-topicos discussao-mais-informacao autor-ativo">
                   <div class="card-body">
                     <div>
                       <div class="card-subtitle discussao-autores">
@@ -418,6 +429,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div  class="card discussoes-topicos discussao-mais-informacao">
                   <div class="card-body">
                     <div>
@@ -433,7 +445,8 @@
                     </div>
                   </div>
                 </div>
-                <div   class="card discussoes-topicos discussao-mais-informacao">
+
+                <div   class="card discussoes-topicos discussao-mais-informacao autor-ativo">
                   <div class="card-body">
                     <div>
                       <div class="card-subtitle discussao-autores">
@@ -452,7 +465,7 @@
                   </div>
                 </div>
                              
-              <div  class="card discussoes-topicos discussao-mais-informacao">
+              <div  class="card discussoes-topicos discussao-mais-informacao autor-ativo">
                 <div class="card-body">
                   <div>
                     <div class="card-subtitle discussao-autores">
@@ -470,17 +483,23 @@
                   </div>
                 </div>
               </div>
-              </div>
+
+              
 
             </div>
             
           </div>
         </div>
       </section>
+  <!--****************************  -->
+
     </div>
+    <!-- Rodapé -->
     <footer>
       <img src="images/footer.svg" alt="Rodapé">
     </footer>
+  <!--****************************  -->
+
   </div>
 
   <!-- Optional JavaScript -->

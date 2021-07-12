@@ -1,4 +1,3 @@
-/* Formatação do container (Formatações gerais) */
 #conteudo{
   display: grid;
 
@@ -11,20 +10,17 @@
   width: 100%;
   height: 100vh;
 
-  background: #FFFFFF;
+  background: var(--white);
 }
-/* Formatação do cabeçalho */
+
 header{
-  
   grid-area: header;
   height: 6.8rem;
   width: 100%;
-
-  background: #FDF1EB;
-  position: relative;
+  margin: 0;
+  background: var(--white-light);
 
   word-break: break-all;
-  margin-bottom: 0;
   
   display: flex;
   justify-content: space-between;
@@ -42,24 +38,15 @@ header #titulo p:nth-child(1){
 
 header #titulo p:nth-child(1), header #titulo p:nth-child(3){
   height: min(1.6rem, 16px);
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: min(1.4rem, 14px);
-  line-height: min(1.64rem, 16,4px);
-  color: var(--grey-medium);
 }
 
 header #titulo p:nth-child(2){
   height: min(2.6rem, 26px);
   width: min(64.3rem, 643px);
   
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: min(2.2rem, 22px);
   line-height: min(2.6rem, 26px);
   top: 2.3rem;
-  
-  color: var(--grey-medium);
 }
 
 header #titulo p:nth-child(3){
@@ -81,7 +68,7 @@ header #perfil-usuario{
   display: flex;
   text-align: right;
   align-items: center;
-  word-wrap: normal;
+  word-wrap: break-word;
 
   margin-right: 3.6rem;
   
@@ -91,7 +78,7 @@ header #perfil-usuario{
 
 header #perfil-usuario > div > p:nth-child(1){
   font-size: min(1.4rem, 14px);
-  line-height: (1.75rem, 17,5px);
+  line-height: min(1.75rem, 17,5px);
 }
 
 header #perfil-usuario > div > p:nth-child(2){
@@ -99,15 +86,6 @@ header #perfil-usuario > div > p:nth-child(2){
   line-height: 1.5rem;  
   
   width: 16.4rem;
-}
-
-header #perfil-usuario > div > p{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
-  /* margin-right: -1rem; */
-  color: var(--grey-dark);
 }
 
 /* AVATAR - Notificações*/
@@ -132,7 +110,6 @@ header #perfil-usuario > div > img{
   z-index: 1;
   
 }
-/***** Fim do cabeçalho *****/
 
 /***** Inicio do menu-lateral *****/
 #menu-lateral {
@@ -157,7 +134,6 @@ header #perfil-usuario > div > img{
   
   align-items: center;
   height: 6.8rem;
-  
 }
 
 #menu-lateral > div.gradiente > p{
@@ -193,24 +169,20 @@ nav ul li > div.gradiente{
 }
 
 #trabalhos{
-  background: #FDF1EB;
+  background: var(--white-light);
 }
 #trabalhos > div.gradiente{
   display: block;
 }
 
-
-
-
-
 #menu-lateral > nav ul li a{
   padding: .7rem 0 .7rem 2.4rem;
-  font-family: 'Quicksand';
   color: var(--grey-medium);
   font-weight: 500;
   font-size: 1.5rem;
 }
 /* Fim do menu lateral */
+
 
 /* Inicio do conteudo principal */
 #conteudo-principal{
@@ -265,7 +237,6 @@ nav ul li > div.gradiente{
   width: 12rem;
 }
 
-
 #conteudo-titulo{
   width: 78.6rem;
   margin-right: 5.6rem;
@@ -274,7 +245,7 @@ nav ul li > div.gradiente{
 
 #conteudo-titulo > h3{
   /* color: var(--orange); */
-  color: #ED7839;
+  color: var(--orange-text);
 
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -304,7 +275,7 @@ nav ul li > div.gradiente{
   
   letter-spacing: 0.05em;
 
-  color: #ED7839;
+  color: var(--orange-text);
   text-transform: uppercase;
 }
 
@@ -312,11 +283,11 @@ nav ul li > div.gradiente{
   display: flex;
   margin-top: 1.9rem;
 }
-
 #conteudo-principal > section > aside{
   margin-left: 3rem;
   margin-right: 4.6rem;
   width: 24.2rem;
+  max-height: 43.9rem;
 }
 
 #conteudo-principal > section > aside > div:nth-child(1){
@@ -326,11 +297,11 @@ nav ul li > div.gradiente{
   font-weight: 500;
 
   color: var(--grey-dark);
-  background: #FDF1EB;
+  background: var(--white-light);
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #F4F4F4;
+  background-color: cla;
 }
 
 ::-webkit-scrollbar {
@@ -347,7 +318,9 @@ nav ul li > div.gradiente{
   font-style: normal;
   font-size: 1.2rem;
 }
-
+main{
+  z-index: 1;
+}
 #conteudo-principal > section > aside > div > p > span{
   font-weight: bold;
 }
@@ -388,6 +361,7 @@ nav ul li > div.gradiente{
   font-size: 1.2rem;
   line-height: 1.68rem;  
 }
+/*********************************************** */
 
 /* Inicio do Resumo */
 #resumo{
@@ -402,7 +376,7 @@ nav ul li > div.gradiente{
   font-weight: 500;
 
   color: var(--grey-dark);
-  background: #FDF1EB;
+  background: var(--white-light);
 }
 
 #resumo > div > div:nth-child(2){
@@ -416,7 +390,7 @@ nav ul li > div.gradiente{
 }
 
 #resumo #ver-mais > span{
-  color: #ED7839;
+  color: var(--orange-text);
   cursor: pointer;
 }
 
@@ -442,7 +416,7 @@ div.card-header{
   font-weight: 500;
   width: 100%;
   color: var(--grey-dark);
-  background: #FDF1EB;
+  background: var(--white-light);
 }
 
 section#discussoes{
@@ -450,6 +424,8 @@ section#discussoes{
 }
 section#discussoes > div{
   width: 100%;
+  max-width: 105.8rem;
+  max-height: 91.9rem;
 }
 
 .discussoes-cabecalho{
@@ -472,6 +448,11 @@ section#discussoes > div{
   font-family: 'Roboto';
   line-height: 2.1rem;
   clear: both;
+}
+
+
+.autor-ativo.discussao-mais-informacao {
+  background: #F8F8F8;
 }
 
 .discussoes-cabecalho div:nth-child(2){
@@ -516,7 +497,7 @@ section#discussoes > div{
 #criar-discussao2 > div:nth-child(3),
 #criar-discussao > div:nth-child(1),
 #criar-discussao > div:nth-child(3){
-  border: .05rem solid red;
+  border: .05rem solid #ECECEC;
   
   height: .1rem;
   width: 45rem;
@@ -615,14 +596,16 @@ section#discussoes > div{
 
   color: #4D4D4D;
   box-sizing: border-box;
+  margin-bottom: 0;
 }
 
 #nova-discussao > div{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #CCCCCC;
+  background: #EAF1F2;
   height: 3.1rem;
+  margin-top: -.2rem;
 }
 
 #nova-discussao > div > #editar-texto{
@@ -634,6 +617,14 @@ section#discussoes > div{
   width: 20.51rem;
   height: 3.1rem;
 
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  
   color: var(--white);
 }
 /* Fim da área do formilário */

@@ -8,16 +8,17 @@
 
 html{/*Variaveis*/
   --white: #FFFFFF;
+  --white-light: #FDF1EB;
+  
   --light-orange: #FFB354 ;
   --orange: #EE7A3A;
   --orange-text: #ED7839;
   
-
-  --light: #FDF1EB;
-  
   --grey-dark: #4E4E4E;
   --grey-light: #725C5C;
   --grey-medium: #725C5C;
+
+
   /* 1rem = 16px = 100% */
   /* Tornando padrão para 10px */
   font-size: 62.5%;
@@ -26,34 +27,7 @@ html{/*Variaveis*/
 body{
   display: flex;
   height: 100vh;/*100% da tela independente do tela*/
-  background: var(--background);
 }
-
-body, button, input, textarea{
-  /*Clamp(minimo, padrão, maximo)  = intervalo de tamanho   */
-  font-size: clamp(14px, 1.6rem, 2vw);
-  font-family: 'Open Sans', sans-serif;
-  /* font-family: 'Poppins', sans-serif; */
-}
-
-.container{
-  width: 100%;
-  margin: 0 auto;
-}
-
-.sr-only{
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;/* Para não ter barra de rolagem */
-  clip-path: rect(0,0,0,0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-
 .gradiente{
   background:  linear-gradient(180deg, var(--light-orange) 0%,var(--orange) 100%);
 }
@@ -90,6 +64,25 @@ button:hover, .button:hover{
 }
 
 /* Formatações de texto */
+.texto-roboto-normal{
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.64rem;
+
+  color: var(--grey-medium);
+}
+
+
+
+.text-quicksand-normal{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  color: var(--grey-dark);
+
+}
 
 .topicos-textos{
   font-family: 'Quicksand', sans-serif;
